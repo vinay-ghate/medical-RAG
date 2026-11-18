@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-11-18T09:27:41Z",
+  "total_test_cases": 22,
+  "safe_cases": 18,
+  "unsafe_cases": 4,
+  "refusal_accuracy_pct": 100.0,
+  "pipelines": {
+    "Dense Only": {
+      "recall@1": 100.0,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 100.0,
+      "latency_ms": 23.7
+    },
+    "Hybrid (BM25+Dense)": {
+      "recall@1": 100.0,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 100.0,
+      "latency_ms": 23.0
+    },
+    "Hybrid + Rerank": {
+      "recall@1": 100.0,
+      "recall@3": 100.0,
+      "recall@5": 100.0,
+      "mrr": 100.0,
+      "latency_ms": 36.9
+    }
+  }
+}

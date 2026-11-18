@@ -34,15 +34,14 @@ REFUSAL_MESSAGE = (
 # Emergency keyword regex patterns
 EMERGENCY_PATTERNS = [
     r"\b(chest\s+pain|heart\s+attack|stroke|trouble\s+breathing|difficulty\s+breathing|can'?t\s+breathe)\b",
-    r"\b(suicid|kill\s+myself|end\s+my\s+life|overdose|overdosing|poisoning|severe\s+bleeding)\b",
+    r"\b(suicid\w*|kill\s+myself|end\s+my\s+life|overdos\w*|poisoning|severe\s+bleeding)\b",
     r"\b(unconscious|anaphylaxis|throat\s+closing|choking|loss\s+of\s+consciousness)\b",
 ]
 
 # Personal diagnosis / dosing patterns
 UNSAFE_REQUEST_PATTERNS = [
     r"\b(diagnose\s+me|do\s+i\s+have|what\s+disease\s+do\s+i\s+have|my\s+symptoms\s+are)\b",
-    r"\b(what\s+dose\s+should\s+i\s+take|how\s+much\s+should\s+i\s+take\s+for\s+my)\b",
-    r"\b(can\s+you\s+prescribe|prescribe\s+me|calculate\s+my\s+dose)\b",
+    r"\b(what\s+dose|how\s+much\s+(?:should|to)\s+take|prescribe|prescribing|calculate\s+(?:my|the)\s+dose)\b",
 ]
 
 
