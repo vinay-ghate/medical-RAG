@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     # LLM Settings
     llm_provider: str = Field(default="groq", description="LLM provider: groq, ollama, etc.")
     groq_api_key: Optional[str] = Field(default=None, description="Groq API key")
-    groq_model: str = Field(default="llama-3.3-70b-versatile", description="Groq model identifier")
+    groq_model: str = Field(default="openai/gpt-oss-20b", description="Groq model identifier")
     ollama_base_url: str = Field(default="http://localhost:11434", description="Ollama endpoint")
     ollama_model: str = Field(default="llama3.2", description="Ollama model name")
     temperature: float = Field(default=0.0, description="Sampling temperature for grounded answers")
