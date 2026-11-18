@@ -1,0 +1,114 @@
+[
+  {
+    "drug": "Metformin",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=metformin-fda",
+    "date": "2024-02-15",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Metformin hydrochloride is indicated as an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients aged 10 years and older with type 2 diabetes mellitus.",
+      "Contraindications": "Metformin is contraindicated in patients with: severe renal impairment (eGFR below 30 mL/min/1.73 m2); known hypersensitivity to metformin hydrochloride; acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+      "Boxed Warning and Precautions": "WARNING: LACTIC ACIDOSIS. Post-marketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias. Risk factors include renal impairment, concomitant use of certain drugs (e.g., carbonic anhydrase inhibitors), age 65 years or older, radiological study with contrast, surgery, hypoxic states, excessive alcohol intake, and hepatic impairment.",
+      "Adverse Reactions": "The most common adverse reactions to metformin are diarrhea, nausea, vomiting, abdominal bloating, flatulence, and anorexia. Long-term treatment has been associated with decreased vitamin B12 absorption and levels.",
+      "Drug Interactions": "Concomitant use of carbonic anhydrase inhibitors (e.g., topiramate, zonisamide) may increase the risk of lactic acidosis. Drugs that reduce metformin clearance (e.g., ranolazine, vandetanib, dolutegravir, cimetidine) may increase systemic exposure to metformin. Alcohol is known to potentiate the effect of metformin on lactate metabolism.",
+      "Mechanism of Action": "Metformin is an antihyperglycemic agent which improves glucose tolerance in patients with type 2 diabetes, lowering both basal and postprandial plasma glucose. Metformin decreases hepatic glucose production, decreases intestinal absorption of glucose, and improves insulin sensitivity by increasing peripheral glucose uptake and utilization."
+    }
+  },
+  {
+    "drug": "Lisinopril",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=lisinopril-fda",
+    "date": "2024-01-10",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Lisinopril is an angiotensin converting enzyme (ACE) inhibitor indicated for: treatment of hypertension in adult patients and pediatric patients 6 years of age and older; adjunct therapy for heart failure in patients who are not responding adequately to diuretics and digitalis; treatment of hemodynamically stable patients within 24 hours of acute myocardial infarction to improve survival.",
+      "Contraindications": "Lisinopril is contraindicated in patients with a history of angioedema related to previous ACE inhibitor treatment, patients with hereditary or idiopathic angioedema, and coadministration of aliskiren with lisinopril in patients with diabetes. Do not coadminister with a neprilysin inhibitor (e.g., sacubitril).",
+      "Boxed Warning and Precautions": "WARNING: FETAL TOXICITY. When pregnancy is detected, discontinue lisinopril as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus.",
+      "Adverse Reactions": "Common adverse reactions occurring in patients treated with lisinopril include persistent dry cough, dizziness, headache, excessive hypotension, hyperkalemia, and elevated serum creatinine or blood urea nitrogen.",
+      "Drug Interactions": "Potassium-sparing diuretics (spironolactone, amiloride, triamterene) or potassium supplements increase the risk of hyperkalemia. Concomitant use with NSAIDs may result in deterioration of renal function, including possible acute renal failure, and attenuation of the antihypertensive effect. Lithium toxicity can occur when coadministered with lisinopril.",
+      "Mechanism of Action": "Lisinopril inhibits ACE in human subjects and animals. ACE is a peptidyl dipeptidase that catalyzes the conversion of angiotensin I to the vasoconstrictor substance, angiotensin II. Angiotensin II also stimulates aldosterone secretion by the adrenal cortex. Beneficial effects result primarily from suppression of the renin-angiotensin-aldosterone system."
+    }
+  },
+  {
+    "drug": "Amoxicillin",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=amoxicillin-fda",
+    "date": "2023-11-20",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Amoxicillin is a penicillin-class antibacterial indicated for the treatment of infections due to susceptible strains of designated microorganisms in infections of the ear, nose, and throat (e.g., otitis media, pharyngitis), genitourinary tract, skin and skin structure, lower respiratory tract, and Helicobacter pylori eradication.",
+      "Contraindications": "Amoxicillin is contraindicated in patients with a history of severe hypersensitivity reactions (e.g., anaphylaxis or Stevens-Johnson syndrome) to amoxicillin or other beta-lactam antibacterial drugs (e.g., penicillins and cephalosporins).",
+      "Warnings and Precautions": "Serious and occasionally fatal hypersensitivity (anaphylactic) reactions have been reported in patients on penicillin therapy. Clostridioides difficile-associated diarrhea (CDAD) has been reported with use of nearly all antibacterial agents, including amoxicillin, ranging from mild diarrhea to fatal colitis.",
+      "Adverse Reactions": "The most common adverse reactions reported are nausea, vomiting, diarrhea, black hairy tongue, and maculopapular rash or urticaria.",
+      "Drug Interactions": "Probenecid decreases the renal tubular secretion of amoxicillin, resulting in increased and prolonged blood levels. Concurrent administration of allopurinol and amoxicillin substantially increases the incidence of rashes in patients receiving both drugs. Amoxicillin may affect the intestinal flora, leading to lower estrogen reabsorption and reduced efficacy of combined oral contraceptives.",
+      "Mechanism of Action": "Amoxicillin is bactericidal against susceptible organisms during the stage of active multiplication. It acts through the inhibition of cell wall biosynthesis by binding to penicillin-binding proteins (PBPs), leading to the lysis of the bacterial cell wall."
+    }
+  },
+  {
+    "drug": "Atorvastatin",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=atorvastatin-fda",
+    "date": "2024-03-01",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Atorvastatin calcium is an HMG-CoA reductase inhibitor indicated as an adjunct to diet to reduce elevated total cholesterol, LDL-C, apo B, and triglycerides, and to increase HDL-C in patients with primary hyperlipidemia and mixed dyslipidemia; and to reduce the risk of stroke, myocardial infarction, and revascularization procedures in adults with multiple risk factors for coronary heart disease.",
+      "Contraindications": "Atorvastatin is contraindicated in active liver failure or unexplained persistent elevations in hepatic transaminases; hypersensitivity to any component of this medication; pregnancy and lactation.",
+      "Warnings and Precautions": "Myopathy and Rhabdomyolysis: Risk of myopathy and rhabdomyolysis with acute renal failure secondary to myoglobinuria is increased with higher doses and concurrent administration of CYP3A4 inhibitors (e.g., clarithromycin, ketoconazole, protease inhibitors), cyclosporine, or gemfibrozil. Discontinue if markedly elevated CK levels occur or myopathy is diagnosed. Liver enzyme abnormalities: Persistent increases in serum transaminases can occur.",
+      "Adverse Reactions": "Most frequent adverse reactions (incidence 2% or greater) are nasopharyngitis, arthralgia, diarrhea, pain in extremity, urinary tract infection, dyspepsia, and musculoskeletal pain.",
+      "Drug Interactions": "Strong CYP3A4 inhibitors (e.g., itraconazole, ketoconazole, clarithromycin) significantly increase atorvastatin plasma concentrations. Concomitant use with fibrates (especially gemfibrozil) increases the risk of severe myopathy and rhabdomyolysis. Grapefruit juice contains components that inhibit CYP3A4 and can increase atorvastatin exposure when consumed in excessive quantities (>1.2 liters daily).",
+      "Mechanism of Action": "Atorvastatin is a selective, competitive inhibitor of HMG-CoA reductase, the rate-limiting enzyme that converts 3-hydroxy-3-methylglutaryl-coenzyme A to mevalonate, a precursor of sterols including cholesterol. By reducing hepatic cholesterol, it up-regulates LDL receptors on hepatocytes, promoting LDL clearance."
+    }
+  },
+  {
+    "drug": "Ibuprofen",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ibuprofen-fda",
+    "date": "2024-01-25",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) indicated for relief of the signs and symptoms of rheumatoid arthritis and osteoarthritis, for relief of mild to moderate pain, and for the reduction of fever.",
+      "Contraindications": "Ibuprofen is contraindicated in patients with known hypersensitivity to ibuprofen or other NSAIDs; history of asthma, urticaria, or allergic-type reactions after taking aspirin or other NSAIDs; in the setting of coronary artery bypass graft (CABG) surgery.",
+      "Boxed Warning and Precautions": "WARNING: CARDIOVASCULAR THROMBOTIC EVENTS AND GASTROINTESTINAL RISK. NSAIDs cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal. Risk may occur early in treatment and may increase with duration of use. NSAIDs cause an increased risk of serious gastrointestinal adverse events including bleeding, ulceration, and perforation of the stomach or intestines, which can be fatal. Elderly patients and patients with prior peptic ulcer disease are at greater risk.",
+      "Adverse Reactions": "Adverse reactions reported in 3% to 9% of patients include nausea, epigastric pain, heartburn, dizziness, edema, tinnitus, and fluid retention.",
+      "Drug Interactions": "Concomitant use of ibuprofen with oral anticoagulants (e.g., warfarin) or antiplatelet agents increases gastrointestinal bleeding risks. Concomitant use with ACE inhibitors, ARBs, or diuretics reduces their antihypertensive effects and increases the risk of acute renal failure. Concomitant use with SSRIs increases bleeding complications.",
+      "Mechanism of Action": "Ibuprofen is a non-selective inhibitor of cyclooxygenase-1 (COX-1) and cyclooxygenase-2 (COX-2). Its anti-inflammatory, analgesic, and antipyretic actions result primarily from inhibition of prostaglandin synthesis."
+    }
+  },
+  {
+    "drug": "Warfarin",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=warfarin-fda",
+    "date": "2023-12-10",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Warfarin sodium is a vitamin K antagonist indicated for the prophylaxis and treatment of venous thromboembolism, pulmonary embolism, and thromboembolic complications associated with atrial fibrillation and/or cardiac valve replacement, and to reduce the risk of death, recurrent MI, and thromboembolic events after myocardial infarction.",
+      "Contraindications": "Warfarin is contraindicated in pregnancy (except in women with mechanical heart valves at high risk for thromboembolism), hemorrhagic tendencies or blood dyscrasias, recent or contemplated brain, eye, or spinal surgery, active ulceration or overt bleeding, and malignant hypertension.",
+      "Boxed Warning and Precautions": "WARNING: BLEEDING RISK. Warfarin sodium can cause major or fatal bleeding. Perform regular monitoring of INR in all treated patients. Numerous drugs, dietary changes, and other factors affect INR levels achieved with warfarin therapy. Instruct patients on prevention measures and to report immediately symptoms of bleeding.",
+      "Adverse Reactions": "The most common and serious adverse reaction is hemorrhage from any tissue or organ. Other reactions include necrosis of skin, calciphylaxis, systemic cholesterol microembolization (purple toes syndrome), and hypersensitivity/allergic reactions.",
+      "Drug Interactions": "Drugs that inhibit CYP2C9 (e.g., amiodarone, fluconazole, metronidazole, sulfamethoxazole-trimethoprim) potentiate warfarin and drastically elevate INR and bleeding risk. Drugs that induce CYP enzymes (e.g., rifampin, carbamazepine, St. John's wort) decrease warfarin anticoagulation efficacy. NSAIDs and antiplatelet drugs markedly heighten GI bleed risk without necessarily altering INR. Dietary intake of Vitamin K directly antagonizes warfarin activity.",
+      "Mechanism of Action": "Warfarin competitively inhibits the vitamin K epoxide reductase enzyme complex (VKORC1), causing depletion of the active hydroquinone form of vitamin K. This diminishes vitamin K-dependent carboxylation of coagulation factors II, VII, IX, and X, as well as regulatory proteins C and S."
+    }
+  },
+  {
+    "drug": "Omeprazole",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=omeprazole-fda",
+    "date": "2024-02-01",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Omeprazole is a proton pump inhibitor (PPI) indicated in adults for: treatment of active duodenal ulcer; eradication of H. pylori to reduce recurrence of duodenal ulcer; treatment of active benign gastric ulcer; treatment of symptomatic gastroesophageal reflux disease (GERD); and maintenance of healing of erosive esophagitis.",
+      "Contraindications": "Omeprazole is contraindicated in patients with known hypersensitivity to substituted benzimidazoles or any component of the formulation. Coadministration with rilpivirine-containing products is contraindicated.",
+      "Warnings and Precautions": "Long-term PPI therapy is associated with increased risk of Clostridioides difficile-associated diarrhea, bone fractures (hip, wrist, spine), hypomagnesemia, and vitamin B12 deficiency. Acute tubulointerstitial nephritis has been observed.",
+      "Adverse Reactions": "Most common adverse reactions (incidence >= 2%) in adults are headache, abdominal pain, nausea, diarrhea, vomiting, and flatulence.",
+      "Drug Interactions": "Omeprazole inhibits CYP2C19. Concomitant use with clopidogrel reduces the antiplatelet activity of clopidogrel; avoid coadministration. Omeprazole increases gastric pH, which reduces the absorption of drugs dependent on an acidic gastric pH for bioavailability (e.g., ketoconazole, iron salts, erlotinib). Concomitant use with methotrexate may increase methotrexate blood levels.",
+      "Mechanism of Action": "Omeprazole belongs to a class of antisecretory compounds that suppress gastric acid secretion by specific inhibition of the H+/K+ ATPase enzyme system at the secretory surface of the gastric parietal cell."
+    }
+  },
+  {
+    "drug": "Albuterol",
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=albuterol-fda",
+    "date": "2023-10-15",
+    "doc_type": "fda_drug_label",
+    "sections": {
+      "Indications and Usage": "Albuterol sulfate inhalation aerosol is a beta2-adrenergic agonist indicated for the relief and prevention of bronchospasm in patients 4 years of age and older with reversible obstructive airway disease and for the prevention of exercise-induced bronchospasm.",
+      "Contraindications": "Albuterol inhalation aerosol is contraindicated in patients with a history of hypersensitivity to albuterol or any of its ingredients.",
+      "Warnings and Precautions": "Paradoxical bronchospasm: Albuterol can produce paradoxical bronchospasm, which may be life-threatening. If it occurs, discontinue immediately. Cardiovascular effects: Like other beta-adrenergic agonists, albuterol can produce clinically significant cardiovascular effects in some patients, measured by pulse rate, blood pressure, and ECG changes. Use with caution in patients with cardiovascular disorders, convulsive disorders, hyperthyroidism, or diabetes mellitus.",
+      "Adverse Reactions": "Adverse reactions occurring in >= 2% of patients include tremor, nervousness, nausea, headache, tachycardia, palpitations, and throat irritation.",
+      "Drug Interactions": "Beta-blockers (e.g., propranolol) antagonize the pulmonary effect of albuterol and may produce severe bronchospasm in patients with asthma. Other sympathomimetic agents should be used with caution to prevent deleterious cardiovascular effects. Concomitant use with MAO inhibitors or tricyclic antidepressants may potentiate albuterol effects on the vascular system.",
+      "Mechanism of Action": "Albuterol selectively stimulates beta2-adrenergic receptors in bronchial smooth muscle, leading to activation of adenyl cyclase and an increase in intracellular cyclic AMP (cAMP). This relaxes bronchial smooth muscle and relieves bronchospasm."
+    }
+  }
+]
