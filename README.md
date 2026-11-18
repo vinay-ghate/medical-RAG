@@ -22,7 +22,7 @@ flowchart TD
 
     CrossEncoder --> TopReranked["Top Ranked Evidence Chunks"]
     TopReranked --> Prompt["Grounded Prompt Template\n(Strict Zero-Hallucination Policy)"]
-    Prompt --> LLM["LLM (Groq Llama-3.3-70B / Ollama)"]
+    Prompt --> LLM["LLM (Groq openai/gpt-oss-20b / Ollama)"]
     LLM --> PostCheck["Safety Post-Check\n(PHI Scrubbing + Medical Disclaimer)"]
     PostCheck --> FinalAnswer(["Grounded Cited Answer"])
 ```
@@ -32,7 +32,7 @@ flowchart TD
 ## Key Features
 
 1. **100% Free & Fast**:
-   - **LLM**: Groq free tier (`llama-3.3-70b-versatile`) or local offline Ollama (`llama3.2`).
+   - **LLM**: Groq free tier (`openai/gpt-oss-20b` or `llama-3.3-70b-versatile`) or local offline Ollama (`llama3.2`).
    - **Embeddings**: Local `sentence-transformers/all-MiniLM-L6-v2` (runs on CPU/GPU, $0 cost).
    - **Vector Store**: Local persistent ChromaDB.
    - **Reranker**: Local `FlashRank` CPU cross-encoder.
@@ -54,7 +54,46 @@ flowchart TD
 
 ---
 
-## Benchmark Evaluation Results
+## Knowledge Base & Question Coverage Scope
+
+The assistant provides grounded answers strictly from the indexed documents in [`data/raw/`](./data/raw/). It does **not** rely on pre-trained parametric memory for clinical facts, preventing hallucinations.
+
+### 1. Indexed Medical Corpus (52 Chunks / 49 Sections)
+
+| Drug / Topic | Category | Indexed Clinical Sections & Covered Questions |
+| :--- | :--- | :--- |
+| **Metformin** | Type 2 Diabetes | Indications, Severe renal impairment contraindications (eGFR < 30), Lactic acidosis boxed warning, Common GI adverse effects, Carbonic anhydrase & alcohol interactions, Hepatic glucose reduction mechanism. |
+| **Lisinopril** | ACE Inhibitor (Hypertension) | Adult & pediatric hypertension, Heart failure adjunct, Fetal toxicity boxed warning (pregnancy discontinuation), Dry cough adverse reaction, Potassium supplement & NSAID interactions, RAAS inhibition mechanism. |
+| **Amoxicillin** | Penicillin-Class Antibacterial | Bacterial ENT/skin infections, Severe beta-lactam hypersensitivity contraindications, *C. difficile* colitis warnings, Allopurinol rash & probenecid interactions, Cell wall lysis mechanism. |
+| **Atorvastatin** | HMG-CoA Reductase Inhibitor | Hyperlipidemia & cardiovascular risk reduction, Active liver disease contraindications, Myopathy & rhabdomyolysis warnings, Strong CYP3A4 inhibitors (clarithromycin, gemfibrozil, grapefruit juice) interactions. |
+| **Ibuprofen** | NSAID Analgesic/Antipyretic | Osteoarthritis, rheumatoid arthritis, mild-to-moderate pain, CABG surgery contraindication, Cardiovascular thrombotic & GI bleeding boxed warnings, Warfarin & ACE inhibitor interactions. |
+| **Warfarin** | Vitamin K Antagonist (Anticoagulant) | Venous thromboembolism & AFib prophylaxis, Bleeding risk boxed warning & mandatory INR monitoring, CYP2C9 inhibitors (amiodarone, fluconazole) & Vitamin K interactions, VKORC1 enzyme inhibition mechanism. |
+| **Omeprazole** | Proton Pump Inhibitor (GERD) | Duodenal/gastric ulcers, GERD, erosive esophagitis, Hypomagnesemia & bone fracture warnings, Clopidogrel CYP2C19 interaction, Gastric parietal cell H+/K+ ATPase inhibition mechanism. |
+| **Albuterol** | Beta2-Agonist Bronchodilator | Bronchospasm relief, Paradoxical bronchospasm warnings, Cardiovascular tachycardia precautions, Beta-blocker antagonism interactions, Intracellular cyclic AMP (cAMP) bronchial smooth muscle relaxation. |
+| **CDC / AAP Guidelines** | Clinical Practice Guideline | Diagnostic stewardship, Acute Otitis Media high-dose amoxicillin recommendation (80-90 mg/kg/day), Non-beta-lactam alternatives (azithromycin/clindamycin) for penicillin-allergic patients. |
+| **AHA / ACC Guidelines** | Clinical Practice Guideline | Confirmed hypertension definition (BP >= 130/80 mmHg), ASCVD >= 10% risk thresholds, Stage 2 hypertension (>= 140/90 mmHg) dual-therapy mandate, First-line agents (ACEi, ARB, CCB, thiazide). |
+| **ADA Guidelines** | Clinical Practice Guideline | Foundational first-line Metformin role, eGFR renal safeguards: annual monitoring, dose caution between 30-45 mL/min/1.73m², strict contraindication when eGFR < 30 mL/min/1.73m². |
+
+### 2. Supported Question Types
+* **Single-Drug Queries**: *"What are the contraindications for Metformin?"*, *"What enzyme does Atorvastatin inhibit?"*
+* **Drug-Drug Interactions**: *"Can I take Ibuprofen if I am prescribed Warfarin?"*, *"Why should Omeprazole be avoided with Clopidogrel?"*
+* **Black Box Warnings**: *"What is the boxed warning for Lisinopril regarding pregnancy?"*
+* **Clinical Guideline Lookups**: *"What blood pressure threshold defines Stage 2 hypertension under AHA/ACC guidelines?"*
+
+### 3. Out-of-Scope Queries & Fallback Behavior
+* **Unindexed Drugs / Questions** (e.g. *"What is the dose of Ozempic?"*):
+  The pipeline returns the zero-hallucination fallback:
+  > *"Based on the provided medical references, this information was not found."*
+* **Emergency & Personal Dosing Queries** (e.g. *"I have severe chest pain"*, *"Diagnose me"*, *"What dose should I give my child?"*):
+  Intercepted by safety pre-checks before reaching the LLM and safely redirected.
+
+### 4. How to Expand the Knowledge Base
+To enable the assistant to answer questions on new drugs or guidelines:
+1. Drop additional medical PDFs, JSON files, or text guidelines into [`data/raw/`](./data/raw/).
+2. Run `python scripts/ingest.py`.
+3. The new documents will be automatically chunked, embedded into ChromaDB, and indexed in BM25 with zero code changes.
+
+---
 
 Evaluated against the golden test suite (`data/eval/golden_set.json`) covering indications, contraindications, boxed warnings, drug-drug interactions, and clinical guidelines:
 
@@ -93,7 +132,7 @@ Add your free Groq API key:
 ```env
 LLM_PROVIDER=groq
 GROQ_API_KEY=gsk_your_key_here
-GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_MODEL=openai/gpt-oss-20b
 ```
 
 *(Optional) Enable LangSmith tracing:*
