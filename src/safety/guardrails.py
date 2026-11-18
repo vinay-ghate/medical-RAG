@@ -31,11 +31,11 @@ REFUSAL_MESSAGE = (
     "Please consult a licensed physician or pharmacist for clinical evaluation and personalized dosing."
 )
 
-# Emergency keyword regex patterns
+# Emergency keyword regex patterns (active acute life-threatening situations)
 EMERGENCY_PATTERNS = [
     r"\b(chest\s+pain|heart\s+attack|stroke|trouble\s+breathing|difficulty\s+breathing|can'?t\s+breathe)\b",
     r"\b(suicid\w*|kill\s+myself|end\s+my\s+life|overdos\w*|poisoning|severe\s+bleeding)\b",
-    r"\b(unconscious|anaphylaxis|throat\s+closing|choking|loss\s+of\s+consciousness)\b",
+    r"\b(throat\s+(?:is\s+)?closing|choking|unconscious|loss\s+of\s+consciousness|anaphylactic\s+shock|having\s+(?:an\s+)?anaphylaxis|experiencing\s+anaphylaxis)\b",
 ]
 
 # Personal diagnosis / dosing patterns
