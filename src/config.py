@@ -82,15 +82,25 @@ settings = Settings()
 
 
 def setup_logger(name: str = "medical_rag") -> logging.Logger:
-    """Setup structured logger with consistent format."""
+    """Setup structured logger with console and persistent file handlers."""
     logger = logging.getLogger(name)
     if not logger.handlers:
-        handler = logging.StreamHandler()
         formatter = logging.Formatter(
             fmt="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
             datefmt="%Y-%m-%d %H:%M:%S",
         )
-        handler.setFormatter(formatter)
-        logger.addHandler(handler)
+
+        # 1. Console stream handler
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        logger.addHandler(console_handler)
+
+        # 2. Persistent file handler in logs/app.log
+        log_dir = BASE_DIR / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        file_handler = logging.FileHandler(log_dir / "app.log", encoding="utf-8")
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+
         logger.setLevel(logging.INFO)
     return logger
