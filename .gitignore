@@ -1,0 +1,34 @@
+# Virtual environments
+.venv/
+.venv*/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environment files
+.env
+!.env.example
+
+# Vector DB local data & Chroma storage
+chroma_db/
+data/chroma/
+*.chroma
+
+# Logs & Traces
+*.log
+logs/
+
+# IDE files
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store

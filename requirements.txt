@@ -1,0 +1,26 @@
+# LangChain Core & Integrations
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-groq>=0.2.0
+langchain-chroma>=0.2.0
+langsmith>=0.1.0
+
+# Vector Database & Retrieval
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+rank-bm25>=0.2.2
+flashrank>=0.2.9
+
+# Document Loaders & Parsers
+pypdf>=5.0.0
+beautifulsoup4>=4.12.0
+requests>=2.32.0
+
+# Configuration & Environment
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.0
+
+# UI
+streamlit>=1.38.0
